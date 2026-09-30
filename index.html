@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Ekskul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Form Pendaftaran Ekskul <br> SMK Letris Pamulang</h1>
+
+    <label>Nama Lengkap:</label>
+    <input type="text" id="nama" placeholder="Masukkan nama siswa">
+
+    <label>Kelas:</label>
+
+    <div class="radio">
+        <input type="radio" name="kelas" value="X"> X
+        <input type="radio" name="kelas" value="XI"> XI
+        <input type="radio" name="kelas" value="XII"> XII
+    </div>
+
+    <label>Jurusan:</label>
+    <select id="jurusan">
+        <option value="">-- Pilih Jurusan --</option>
+        <option>PPLG</option>
+        <option>DKV</option>
+        <option>TJKT</option>
+        <option>AKL</option>
+        <option>BDP</option>
+        <option>MPLB</option>
+    </select>
+
+    <label>Pilihan Ekskul:</label>
+    <select id="ekskul">
+        <option value="">-- Pilih Ekstrakurikuler --</option>
+        <option>Animasi</option>
+        <option>Paskibra</option>
+        <option>Volly</option>
+        <option>Basket</option>
+        <option>Futsal</option>
+    </select>
+
+    <button onclick="tambahData()">Tambah Data</button>
+
+    <h2>Data Pendaftaran Siswa</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+                <th>Jurusan</th>
+                <th>Ekskul</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
